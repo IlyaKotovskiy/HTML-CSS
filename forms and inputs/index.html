@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Выберите сувенир</legend>
+        <div><label><input type="radio" name="souvenier" value="Кружка">Кружка</label></div>
+        <div><label><input type="radio" name="souvenier" value="Матрешка">Матрешка</label></div>
+        <div><label><input type="radio" name="souvenier" value="Шапка ушанка" checked>Шапка ушанка</label></div>
+        <div><label><input type="radio" name="souvenier" value="Плюшевый мишка">Плюшевый мишка</label></div>
+        <div><label><input type="radio" name="souvenier" value="Балалайка">Балалайка</label></div>
+    </fieldset>
+    <fieldset>
+        <legend>Выберите расцветку</legend>
+        <div><input type="radio" name="color" value="Хохлома" checked>Хохлома</div>
+        <div><input type="radio" name="color" value="Гжель">Гжель</div>
+        <div><input type="radio" name="color" value="Палехская роспись">Палехская роспись</div>
+    </fieldset>
+    <fieldset>
+        <legend>Дополнительно</legend>
+        <div><input type="checkbox" name="opt1" value="Подарочная карта">Подарочная карта</div>
+        <div><input type="checkbox" name="opt2" value="Карта города">Карта города</div>
+        <div><input type="checkbox" name="opt3" value="Игральные карты">Игральные карты</div>
+        <div><input type="checkbox" name="opt4" value="Магнит">Магнит</div>
+        <div><input type="checkbox" name="opt5" value="Пятерочка">Пятерочка</div>
+    </fieldset>
+
+    <optgroup label="Рабочие дни">
+        <option value="day">Понедельник</option>
+        <option value="day">Вторник</option>
+        <option value="day">Среда</option>
+        <option value="day">Четверг</option>
+        <option value="day">Пятница</option>
+    </optgroup>
+    <optgroup label="Выходные дни">
+        <option value="day_">Суббота</option>
+        <option value="day_">Воскресенье</option>
+    </optgroup>
+
+
+    <textarea name="message" placeholder="Напишите нам" cols="30" rows="10"></textarea>
+
+</body>
+
+</html>

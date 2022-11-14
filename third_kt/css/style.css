@@ -1,0 +1,189 @@
+:root{
+    --default-tranition: 0.3s;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0035;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #bebebd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    padding: 20px 0 100px;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;   
+}
+
+.pink {
+    background-color: pink;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.magenta {
+    background-color: #ca3767;
+}
+
+.gold {
+    background-color: #FFEC8B;
+}
+
+.gray {
+    background-color: #332F2C;
+}
+
+.fiolet {
+    background-color: #53377A;
+}
+
+.ocean {
+    background-color: #1D334A;
+}
+
+.snow {
+    background-color: #ACE5EE;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.grus-pink{
+    background-color: #D71868;
+}
+
+.silver{
+    background-color: silver;
+}
+
+.wrapper-blocks {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-bottom: 15px;
+}
+
+.wrapper-blocks::-webkit-scrollbar {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.wrapper-blocks::-webkit-scrollbar-thumb {
+    background-color: #35266c;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 10px #0d0a20;
+}
+
+.wrapper-blocks::-webkit-scrollbar-thumb:hover{
+    background-color: #1e1835;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 215px;
+    height: 445px;
+    padding: 10px;
+}
+
+.blocks{
+    margin-bottom: 100px;
+}
+
+.elem-sr {
+    width: 100%;
+    height: 100px;
+}
+
+.elem-sr:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.elem-sm {
+    width: 100px;
+    height: 100px;
+    margin: 0 15px 15px 0;
+}
+
+.elem-bg {
+    width: 100%;
+    height: 215px;
+    margin-bottom: 15px;
+}
+
+.elem-y {
+    height: 215px;
+    width: 100px;
+    margin: 0 15px 15px 0;
+}
+
+.elem {
+    border-radius: 15px;
+    transition: transform var(--default-tranition);
+}
+
+.elem:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+.max-ballov__title{
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #150b3c;
+    text-align: center;
+    transition: color var(--default-tranition);
+}
+
+.max-ballov__title:hover{
+    color: #0b0035;
+}
+
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.mr0 {
+    margin-right: 0;
+}

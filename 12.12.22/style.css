@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.item {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.block {
+    background-color: beige;
+    display: grid;
+    /* сетка-шаблон-колонки 
+        шаблон столбцев сетки
+    */
+    /* grid-template-columns: 100px 200px; */
+    /* grid-template-columns: repeat(3, 100px); */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(5, auto) 100px;
+    gap: 10px 50px;
+}
+
+.item:nth-child(5){
+    background-color: blueviolet;
+    grid-row-start: 1;
+    grid-row-end: 10;
+}
+
+.item:nth-child(7){
+    background-color: blueviolet;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column-end: 5;
+}
+
+.item:last-child{
+    background-color: blue;
+    /* grid-column: 1 / 4; => начнись у первой линии и закончись у четвертой линии
+    span - сколько заполоняет собой пространства */
+    grid-column-end: span 4;
+}
